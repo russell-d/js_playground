@@ -1,0 +1,48 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+#game{
+    width:500px;
+    height:200px;
+    border: 1px solid black;
+}
+
+#character{
+    width:20px;
+    height:50px;
+    background-color: blue;
+    position: relative;
+    top:150px;
+    /*character is 50px tall, game box is 200px tall. we put character at 150px top padding to put at bottom */
+}
+
+/*class for jump animation for javascript function to add this class to the character*/
+.animate{
+    animation: jump 500ms;
+}
+
+#obstacle{
+    width:20px;
+    height:20px;
+    background-color: red;
+    position: relative;
+    top:130px;
+    left:480px;
+    animation: obstacle 1s infinite linear;
+}
+
+@keyframes obstacle{
+    0%{left:480px;}
+    100%{left:-10px;}
+    /*goes left the entire animation (0% -> 100%)*/
+}
+
+@keyframes jump{
+    0%{top:150px;}
+    30%{top:100px;}
+    70%{top:100px;}
+    100%{top:150px;}
+    /*jumps character. at 30% through animation it is at 100px, 70% to hover at top for a lil bit, then at 100% comes back down*/
+}
