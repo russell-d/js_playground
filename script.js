@@ -23,17 +23,19 @@ var checkDead = setInterval(function(){
         obstacle.style.animation = "none" //stops animation of obstacle
         obstacle.style.display = "none" //stops displaying obstacle
         alert('you lose!') //tells user that they lost 
-        // score.style.display = "none"
+        score.style.display = "none"
     }
 },10)
 
-// var increaseScore = setInterval(function(){
-//     var score = document.getElementById('score')
-//     var value = score.innerHTML
-//     value++
-//     score.innerHTML = value
-// },1000)
+var increaseScore = setInterval(function(){
+    var score = document.getElementById('score') // get the score object from html and store it in a variable
+    var value = score.innerHTML // create a value variable that will be incremented
+    value++ //increment the value 
+    score.innerHTML = value //set the html text of the score to be equal to the value that we are incrementing
+},1000) //incrementing score every second (the time it takes for a block to come and pass)
 
+
+//I WAS TRYING TO INCREMENT SCORE BY WHEN CHARACTER'S POSITION IS OVER THE OBSTACLE'S POSITION
 
 // function increaseScore(){
 //     var score = document.getElementById('score')
