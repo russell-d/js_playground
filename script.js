@@ -23,5 +23,25 @@ var checkDead = setInterval(function(){
         obstacle.style.animation = "none" //stops animation of obstacle
         obstacle.style.display = "none" //stops displaying obstacle
         alert('you lose!') //tells user that they lost 
+        // score.style.display = "none"
     }
 },10)
+
+// var increaseScore = setInterval(function(){
+//     var score = document.getElementById('score')
+//     var value = score.innerHTML
+//     value++
+//     score.innerHTML = value
+// },1000)
+
+
+// function increaseScore(){
+//     var score = document.getElementById('score')
+//     var value = score.innerHTML
+//     value += 1
+//     score.innerHTML = value
+// }
+
+// if (obstacleLeft < 20 && obstacleLeft > 20 && characterTop <= 130){
+//     increaseScore()
+// }

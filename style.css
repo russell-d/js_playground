@@ -18,6 +18,11 @@
     /*character is 50px tall, game box is 200px tall. we put character at 150px top padding to put at bottom */
 }
 
+#score{
+    margin-left: 500px;
+    font-size: xx-large;
+}
+
 /*class for jump animation for javascript function to add this class to the character*/
 .animate{
     animation: jump 500ms;
